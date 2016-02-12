@@ -39,4 +39,10 @@ public class UnitTest {
     assertEquals("-ppl-", testApp.vowelReplace("apple"));
   }
 
+  @Test
+  public void vowelReplace_stringsWithCasesHaveVowelsReplaced_true() {
+    App testApp = new App();
+    assertEquals("D- -r d- n-t, th-r- -s n- try. -br-h-m L-nc-ln.", testApp.vowelReplace("Do or do not, there is no try. Abraham Lincoln."));
+  }
+
 }

@@ -33,4 +33,10 @@ public class UnitTest {
     assertEquals("-", testApp.vowelReplace("u"));
   }
 
+  @Test
+  public void vowelReplace_multipleLetterWord_dashppldash() {
+    App testApp = new App();
+    assertEquals("-ppl-", testApp.vowelReplace("apple"));
+  }
+
 }

@@ -8,19 +8,26 @@ public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
         String layout = "templates/layout.vtl";
+
+        get("/", (request, response) -> {
+          HashMap<String, Object> model = new HashMap<String, Object>();
+          model.put("template", "templates/home.vtl");
+          return new ModelAndView(model, layout);
+      }, new VelocityTemplateEngine());
+
     }
 
-    public static String vowelReplace(String userWord) {
+    public static String vowelReplace(String word) {
 
-      return userWord.replace("a", "-")
-                     .replace("A", "-")
-                     .replace("e", "-")
-                     .replace("E", "-")
-                     .replace("i", "-")
-                     .replace("I", "-")
-                     .replace("o", "-")
-                     .replace("O", "-")
-                     .replace("u", "-")
-                     .replace("U", "-");
+      return word.replace("a", "-")
+                 .replace("A", "-")
+                 .replace("e", "-")
+                 .replace("E", "-")
+                 .replace("i", "-")
+                 .replace("I", "-")
+                 .replace("o", "-")
+                 .replace("O", "-")
+                 .replace("u", "-")
+                 .replace("U", "-");
     }
 }

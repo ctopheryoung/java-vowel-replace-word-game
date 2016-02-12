@@ -15,6 +15,9 @@ public class IntegrationTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-
-  //Tests go here
+  @Test
+  public void rootTest() {
+      goTo("http://localhost:4567/");
+      assertThat(pageSource()).contains("Vowel Replace Word Game");
+  }
 }

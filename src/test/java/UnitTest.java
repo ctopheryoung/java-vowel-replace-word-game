@@ -4,9 +4,33 @@ import static org.junit.Assert.*;
 public class UnitTest {
 
   @Test
-  public void vowelReplace_oneLetterVowelOutputsOneDash_dash() {
+  public void vowelReplace_oneSOutputsOneDash_dash() {
     App testApp = new App();
     assertEquals("-", testApp.vowelReplace("a"));
+  }
+
+  @Test
+  public void vowelReplace_oneEOutputsOneDash_dash() {
+    App testApp = new App();
+    assertEquals("-", testApp.vowelReplace("e"));
+  }
+
+  @Test
+  public void vowelReplace_oneIOutputsOneDash_dash() {
+    App testApp = new App();
+    assertEquals("-", testApp.vowelReplace("i"));
+  }
+
+  @Test
+  public void vowelReplace_oneOOutputsOneDash_dash() {
+    App testApp = new App();
+    assertEquals("-", testApp.vowelReplace("o"));
+  }
+
+  @Test
+  public void vowelReplace_oneUOutputsOneDash_dash() {
+    App testApp = new App();
+    assertEquals("-", testApp.vowelReplace("u"));
   }
 
 }

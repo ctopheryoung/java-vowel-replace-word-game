@@ -1,17 +1,23 @@
-# Java/Spark/Velocity File Structure Template
+# Vowel Replace Word Game
 
-#### Date
+#### February 12th, 2016
 
-#### By Names
+#### By Chris Young
 
 ## Description
 
-This is a template file structure for use in Epicodus Java/Spark/Velocity projects.
+This is a fun word game written in Java that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve. The resulting puzzle shows on a new page so the original phrase cannot be seen when trying to solve.
+
+Example:
+
+String Input: "Believe you can and you're halfway there. Theodore Roosevelt"
+
+Puzzle Output: "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt:
 
 ## How To Use
 
-* Make a directory for your project and initialize a git repository.
-* Pull this file structure template from GitHub
+* Checkout my GitHub page: (check back for URL)
+* View my source code in my GitHub Repository:
 
 OR:
 

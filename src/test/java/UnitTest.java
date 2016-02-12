@@ -6,7 +6,7 @@ public class UnitTest {
   @Test
   public void vowelReplace_oneLetterVowelOutputsOneDash_dash() {
     App testApp = new App();
-    assertEquals("-", testApp.vowelReplace("a")
+    assertEquals("-", testApp.vowelReplace("a"));
   }
 
 }

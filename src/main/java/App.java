@@ -6,13 +6,24 @@ import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
-        staticFileLocation("/public");
-        String layout = "templates/layout.vtl";
+      staticFileLocation("/public");
+      String layout = "templates/layout.vtl";
 
-        get("/", (request, response) -> {
-          HashMap<String, Object> model = new HashMap<String, Object>();
-          model.put("template", "templates/home.vtl");
-          return new ModelAndView(model, layout);
+      get("/", (request, response) -> {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("template", "templates/home.vtl");
+        return new ModelAndView(model, layout);
+      }, new VelocityTemplateEngine());
+
+      get("/results", (request, response) -> {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("template", "templates/results.vtl");
+
+        String word = request.queryParams("word");
+        String convertedWord = vowelReplace(word);
+        model.put("convertedWord", convertedWord);
+
+        return new ModelAndView(model, layout);
       }, new VelocityTemplateEngine());
 
     }

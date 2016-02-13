@@ -20,5 +20,11 @@ public class IntegrationTest extends FluentTest {
       goTo("http://localhost:4567/");
       assertThat(pageSource()).contains("Vowel Movements");
   }
-  
+
+  @Test
+  public void resultsTest() {
+      goTo("http://localhost:4567/results?word=Do+or+do+not%2C+there+is+no+try.");
+      assertThat(pageSource()).contains("D- -r d- n-t, th-r- -s n- try.");
+  }
+
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UnitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-02-12T19:05:23" hostname="Chriss-MacBook-Pro.local" time="0.002">
+<testsuite name="UnitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-02-13T00:00:19" hostname="Chriss-MacBook-Pro.local" time="0.002">
   <properties/>
   <testcase name="vowelReplace_oneSOutputsOneDash_dash" classname="UnitTest" time="0.0"/>
   <testcase name="vowelReplace_oneEOutputsOneDash_dash" classname="UnitTest" time="0.0"/>
   <testcase name="vowelReplace_oneOOutputsOneDash_dash" classname="UnitTest" time="0.0"/>
   <testcase name="vowelReplace_stringsWithCasesHaveVowelsReplaced_true" classname="UnitTest" time="0.0"/>
   <testcase name="vowelReplace_multipleLetterWord_dashppldash" classname="UnitTest" time="0.0"/>
-  <testcase name="vowelReplace_oneUOutputsOneDash_dash" classname="UnitTest" time="0.001"/>
-  <testcase name="vowelReplace_oneIOutputsOneDash_dash" classname="UnitTest" time="0.0"/>
+  <testcase name="vowelReplace_oneUOutputsOneDash_dash" classname="UnitTest" time="0.0"/>
+  <testcase name="vowelReplace_oneIOutputsOneDash_dash" classname="UnitTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

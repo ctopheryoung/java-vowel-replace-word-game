@@ -1,10 +1,16 @@
-<h1>Vowel Movements</h1>
-<p>Enter in a word or phrase and all of the vowels will be replaced with a "-". After your enter something in, have a friend try to guess what it is you entered.</p>
+<h1><span id="vowely">Vowel</span> Movements</h1>
 
-  <form action="/results" method="get">
-    <div class="form-group">
-      <label for="word">Enter anything you want!</label>
-      <input id="word" name="word" class="form-control" type="text">
-    </div>
-    <button type="submit" class="btn btn-info">Initiate Vowel Movement</button>
-  </form>
+<div class="briefing">
+  <ol>
+    <li>Enter in a word or phrase and all of the vowels will be replaced with a "-".</li>
+    <li>After your enter something in, have a friend try to guess what it is you entered.</li>
+</oi>
+</div>
+
+<form action="/results" method="get">
+  <div class="form-group">
+    <label for="word">Ready for your vowel movement? Enter any text:</label>
+    <input id="word" name="word" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn btn-brownie">Initiate Vowel Movement</button>
+</form>

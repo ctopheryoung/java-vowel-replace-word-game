@@ -1,0 +1,86 @@
+body {
+  background-color: #343838;
+  font-family: 'Lato', sans-serif;
+  color: #00DFFC;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 108px;
+  color: #00B4CC;
+  padding-bottom: 30px;
+}
+
+#vowely {
+  -webkit-text-stroke: 1px #fff;
+  color: #B67943;
+  font-size: 128px;
+  font-family: 'Skranji', cursive;
+}
+
+.briefing {
+  font-size: 28px;
+  padding-bottom: 35px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.btn-brownie {
+  color: #FFFFFF;
+  background-color: #B67943;
+  border-color: #B67943;
+}
+
+.btn-brownie:hover,
+.btn-brownie:focus,
+.btn-brownie:active,
+.btn-brownie.active,
+.open .dropdown-toggle.btn-brownie {
+  color: #FFFFFF;
+  background-color: #CC8B52;
+  border-color: #B67943;
+}
+
+.btn-brownie:active,
+.btn-brownie.active,
+.open .dropdown-toggle.btn-brownie {
+  background-image: none;
+}
+
+.btn-brownie.disabled,
+.btn-brownie[disabled],
+fieldset[disabled] .btn-brownie,
+.btn-brownie.disabled:hover,
+.btn-brownie[disabled]:hover,
+fieldset[disabled] .btn-brownie:hover,
+.btn-brownie.disabled:focus,
+.btn-brownie[disabled]:focus,
+fieldset[disabled] .btn-brownie:focus,
+.btn-brownie.disabled:active,
+.btn-brownie[disabled]:active,
+fieldset[disabled] .btn-brownie:active,
+.btn-brownie.disabled.active,
+.btn-brownie[disabled].active,
+fieldset[disabled] .btn-brownie.active {
+  background-color: #B67943;
+  border-color: #B67943;
+}
+
+.btn-brownie .badge {
+  color: #B67943;
+  background-color: #FFFFFF;
+}
+
+#removalNotification {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 56px;
+}
+
+.well {
+  background-color: #B67943;
+  color: #fff;
+  font-size: 36px;
+  font-family: monospace;
+}

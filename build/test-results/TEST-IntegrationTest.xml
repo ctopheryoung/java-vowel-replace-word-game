@@ -1,15 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-12T19:05:23" hostname="Chriss-MacBook-Pro.local" time="0.598">
+<testsuite name="IntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-02-13T00:00:18" hostname="Chriss-MacBook-Pro.local" time="0.56">
   <properties/>
-  <testcase name="rootTest" classname="IntegrationTest" time="0.598"/>
+  <testcase name="rootTest" classname="IntegrationTest" time="0.56">
+    <failure message="java.lang.AssertionError: &#10;Expecting:&#10; &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;meta name=&quot;author&quot; content=&quot;Chris Young&quot;/&gt;&#13;&#10;    &lt;meta charset=&quot;UTF-8&quot;/&gt;&#13;&#10;    &lt;title&gt;&#13;&#10;      Vowel Movements&#13;&#10;    &lt;/title&gt;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot;/&gt;&#13;&#10;    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Skranji|Lato&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;/&gt;&#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;div class=&quot;container&quot;&gt;&#13;&#10;      &lt;h1&gt;&#13;&#10;        &lt;span id=&quot;vowely&quot;&gt;&#13;&#10;          Vowel&#13;&#10;        &lt;/span&gt;&#13;&#10;         Movements&#13;&#10;      &lt;/h1&gt;&#13;&#10;      &lt;div class=&quot;briefing&quot;&gt;&#13;&#10;        &lt;ol&gt;&#13;&#10;          &lt;li&gt;&#13;&#10;            Enter in a word or phrase and all of the vowels will be replaced with a &quot;-&quot;.&#13;&#10;          &lt;/li&gt;&#13;&#10;          &lt;li&gt;&#13;&#10;            After your enter something in, have a friend try to guess what it is you entered.&#13;&#10;          &lt;/li&gt;&#13;&#10;        &lt;/ol&gt;&#13;&#10;      &lt;/div&gt;&#13;&#10;      &lt;form action=&quot;/results&quot; method=&quot;get&quot;&gt;&#13;&#10;        &lt;div class=&quot;form-group&quot;&gt;&#13;&#10;          &lt;label for=&quot;word&quot;&gt;&#13;&#10;            Ready for your vowel movement? Enter any text:&#13;&#10;          &lt;/label&gt;&#13;&#10;          &lt;input id=&quot;word&quot; name=&quot;word&quot; class=&quot;form-control&quot; type=&quot;text&quot;/&gt;&#13;&#10;        &lt;/div&gt;&#13;&#10;        &lt;button type=&quot;submit&quot; class=&quot;btn btn-brownie&quot;&gt;&#13;&#10;          Initiate Vowel Movement&#13;&#10;        &lt;/button&gt;&#13;&#10;      &lt;/form&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;&quot;&gt;&#10;to contain:&#10; &lt;&quot;Vowel Replace Word Game&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+ &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Chris Young&quot;/&gt;
+    &lt;meta charset=&quot;UTF-8&quot;/&gt;
+    &lt;title&gt;
+      Vowel Movements
+    &lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot;/&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Skranji|Lato&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;h1&gt;
+        &lt;span id=&quot;vowely&quot;&gt;
+          Vowel
+        &lt;/span&gt;
+         Movements
+      &lt;/h1&gt;
+      &lt;div class=&quot;briefing&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;
+            Enter in a word or phrase and all of the vowels will be replaced with a &quot;-&quot;.
+          &lt;/li&gt;
+          &lt;li&gt;
+            After your enter something in, have a friend try to guess what it is you entered.
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/div&gt;
+      &lt;form action=&quot;/results&quot; method=&quot;get&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;label for=&quot;word&quot;&gt;
+            Ready for your vowel movement? Enter any text:
+          &lt;/label&gt;
+          &lt;input id=&quot;word&quot; name=&quot;word&quot; class=&quot;form-control&quot; type=&quot;text&quot;/&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-brownie&quot;&gt;
+          Initiate Vowel Movement
+        &lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+&quot;&gt;
+to contain:
+ &lt;&quot;Vowel Replace Word Game&quot;&gt; 
+	at IntegrationTest.rootTest(IntegrationTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@20871c6b{HTTP/1.1}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@408033a6{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@3f7d8bf0 by 
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@20871c6b{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@1c85b12e by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@408033a6{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - done
 ]]></system-err>
 </testsuite>

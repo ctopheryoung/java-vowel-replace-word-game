@@ -18,6 +18,7 @@ public class IntegrationTest extends FluentTest {
   @Test
   public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Vowel Replace Word Game");
+      assertThat(pageSource()).contains("Vowel Movements");
   }
+  
 }
